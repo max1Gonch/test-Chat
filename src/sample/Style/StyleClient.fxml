@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #755bbd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.ClientController">
+   <children>
+      <Button fx:id="addIP" layoutX="452.0" layoutY="49.0" mnemonicParsing="false" onMouseClicked="#addServerIP" prefHeight="25.0" prefWidth="116.0" text="Ок" />
+      <TextField fx:id="placeServerIP" layoutX="42.0" layoutY="49.0" prefHeight="25.0" prefWidth="381.0" />
+      <Label layoutX="42.0" layoutY="29.0" text="Введите IP сервера:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="addMassage" layoutX="42.0" layoutY="348.0" onKeyPressed="#InputMassage" prefHeight="25.0" prefWidth="381.0">
+         <effect>
+            <ColorAdjust brightness="0.02" contrast="-0.26" hue="-0.3" saturation="-0.05" />
+         </effect>
+      </TextField>
+      <Button fx:id="addName" layoutX="452.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#setName" prefHeight="25.0" prefWidth="116.0" text="Ок" />
+      <Label layoutX="452.0" layoutY="108.0" text="Введите ваше имя:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="placeName" layoutX="451.0" layoutY="134.0" prefHeight="25.0" prefWidth="116.0" />
+      <ListView fx:id="oldMasseges" layoutX="42.0" layoutY="89.0" prefHeight="249.0" prefWidth="381.0" />
+   </children>
+</AnchorPane>
